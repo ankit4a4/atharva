@@ -187,7 +187,7 @@ const UttarakhandExploreSection = () => {
           <p className="text-xl text-gray-700 mb-6">
             Ready to embark on your adventure?
           </p>
-          <a href="/contact">
+          <a >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

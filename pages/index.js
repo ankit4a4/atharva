@@ -269,7 +269,7 @@ const Home = () => {
               <ArrowRight size={20} />
             </motion.button>
 
-            <Link href="/spa">
+            <Link href="/">
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -494,7 +494,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mt-16"
           >
-            <Link href="/rooms">
+            <Link href="/">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -765,7 +765,7 @@ const Home = () => {
                   <span>Paradise Valley, Mountain Region</span>
                 </div>
               </div>
-              <Link href="/contact">
+              <Link href="/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
