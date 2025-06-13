@@ -20,11 +20,16 @@ const Header = () => {
   }, []);
 
   const navigation = [
+    // { name: 'Home', href: '/' },
+    // { name: 'Rooms', href: '/rooms' },
+    // { name: 'Spa', href: '/spa' },
+    // { name: 'About', href: '/about' },
+    // { name: 'Contact', href: '/contact' },
     { name: 'Home', href: '/' },
-    { name: 'Rooms', href: '/rooms' },
-    { name: 'Spa', href: '/spa' },
+    { name: 'Rooms', href: '/' },
+    { name: 'Spa', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/' },
   ];
 
   const isActive = (href) => router.pathname === href;

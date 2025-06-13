@@ -1,38 +1,47 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Sparkles, MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Sparkles,
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
     resort: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Rooms & Suites', href: '/rooms' },
-      { name: 'Spa & Wellness', href: '/spa' },
-      { name: 'Dining', href: '#' },
-      { name: 'Activities', href: '#' },
+      { name: "About Us", href: "/about" },
+      { name: "Rooms & Suites", href: "/" },
+      { name: "Spa & Wellness", href: "/" },
+      { name: "Dining", href: "#" },
+      { name: "Activities", href: "#" },
     ],
     services: [
-      { name: 'Concierge', href: '#' },
-      { name: 'Housekeeping', href: '#' },
-      { name: 'Room Service', href: '#' },
-      { name: 'Laundry', href: '#' },
-      { name: 'Transportation', href: '#' },
+      { name: "Concierge", href: "#" },
+      { name: "Housekeeping", href: "#" },
+      { name: "Room Service", href: "#" },
+      { name: "Laundry", href: "#" },
+      { name: "Transportation", href: "#" },
     ],
     policies: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cancellation Policy', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-    ]
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms of Service", href: "#" },
+      { name: "Cancellation Policy", href: "#" },
+      { name: "Cookie Policy", href: "#" },
+    ],
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'Youtube' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Youtube, href: "#", label: "Youtube" },
   ];
 
   return (
@@ -56,11 +65,11 @@ const Footer = () => {
                 <p className="text-sm text-primary-400 font-medium">& Spa</p>
               </div>
             </Link>
-            
+
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Experience luxury and tranquility at Atharva Resort & Spa. 
-              Nestled in nature's embrace, we offer an unparalleled escape 
-              from the ordinary with world-class amenities and personalized service.
+              Experience luxury and tranquility at Atharva Resort & Spa. Nestled
+              in nature's embrace, we offer an unparalleled escape from the
+              ordinary with world-class amenities and personalized service.
             </p>
 
             {/* Contact Info */}
@@ -84,11 +93,13 @@ const Footer = () => {
 
           {/* Links Sections */}
           <div>
-            <h3 className="font-playfair font-semibold text-lg mb-4">The Resort</h3>
+            <h3 className="font-playfair font-semibold text-lg mb-4">
+              The Resort
+            </h3>
             <ul className="space-y-2">
               {footerLinks.resort.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                   >
@@ -100,11 +111,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-playfair font-semibold text-lg mb-4">Services</h3>
+            <h3 className="font-playfair font-semibold text-lg mb-4">
+              Services
+            </h3>
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                   >
@@ -116,11 +129,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-playfair font-semibold text-lg mb-4">Policies</h3>
+            <h3 className="font-playfair font-semibold text-lg mb-4">
+              Policies
+            </h3>
             <ul className="space-y-2">
               {footerLinks.policies.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                   >
