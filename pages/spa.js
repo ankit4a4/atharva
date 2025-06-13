@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Clock, Users, Sparkles, Leaf, Waves, Sun } from 'lucide-react';
-import BookingModal from '../components/UI/BookingModal';
+import BookingModal from '../components/ui/BookingModal';
 
 const Spa = () => {
   const [bookingModal, setBookingModal] = useState({ isOpen: false, title: '', type: 'spa' });

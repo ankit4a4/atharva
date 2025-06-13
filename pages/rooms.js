@@ -4,8 +4,8 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Users, Wifi, Car, Coffee, Bath, Bed, Mountain, Heart } from 'lucide-react';
-import ImageCarousel from '../components/UI/ImageCarousel';
-import BookingModal from '../components/UI/BookingModal';
+import ImageCarousel from '../components/ui/ImageCarousel';
+import BookingModal from '../components/ui/BookingModal';
 
 const Rooms = () => {
   const [bookingModal, setBookingModal] = useState({ isOpen: false, title: '', type: 'room' });
