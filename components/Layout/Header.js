@@ -20,16 +20,11 @@ const Header = () => {
   }, []);
 
   const navigation = [
-    // { name: 'Home', href: '/' },
-    // { name: 'Rooms', href: '/rooms' },
-    // { name: 'Spa', href: '/spa' },
-    // { name: 'About', href: '/about' },
-    // { name: 'Contact', href: '/contact' },
     { name: 'Home', href: '/' },
-    { name: 'Rooms', href: '/' },
-    { name: 'Spa', href: '/' },
+    { name: 'Rooms', href: '/rooms' },
+    { name: 'Spa', href: '/spa' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const isActive = (href) => router.pathname === href;
@@ -46,7 +41,7 @@ const Header = () => {
       }`}
     >
       <nav className="container-width section-padding">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
@@ -54,23 +49,23 @@ const Header = () => {
               transition={{ duration: 0.5 }}
               className="text-primary-600"
             >
-              <Sparkles size={32} />
+              <Sparkles size={28} className="sm:w-8 sm:h-8" />
             </motion.div>
             <div>
-              <h1 className="text-2xl font-playfair font-bold text-gray-800">
+              <h1 className={`text-lg sm:text-2xl font-playfair font-bold ${scrolled?`text-gray-800` : `text-gray-200`}`}>
                 Atharva Resort
               </h1>
-              <p className="text-sm text-primary-600 font-medium">& Spa</p>
+              <p className="text-xs sm:text-sm text-primary-600 font-medium">& Spa</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <motion.span
                   whileHover={{ y: -2 }}
-                  className={`font-medium transition-colors duration-200 relative ${
+                  className={`font-medium transition-colors duration-200 relative text-sm lg:text-base ${
                     isActive(item.href)
                       ? 'text-primary-600'
                       : scrolled 
@@ -89,7 +84,7 @@ const Header = () => {
               </Link>
             ))}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/contact" className="btn-primary">
+              <Link href="/contact" className="btn-primary text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3">
                 Book Now
               </Link>
             </motion.div>
@@ -147,7 +142,7 @@ const Header = () => {
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
-                    className="btn-primary w-full text-center"
+                    className="btn-primary w-full text-center block"
                   >
                     Book Now
                   </Link>

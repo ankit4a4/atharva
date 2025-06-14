@@ -176,7 +176,7 @@ const About = () => {
                   <p className="text-sm text-gray-600">Expert Team</p>
                 </div>
                 <div className="text-center">
-                  <Leaf className="text-primary-600 mx-auto mb-2" size={32} />
+                  <Leaf className="text-green-600 mx-auto mb-2" size={32} />
                   <p className="text-sm text-gray-600">Eco-Friendly</p>
                 </div>
               </div>
@@ -197,7 +197,7 @@ const About = () => {
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-600 mb-2">
-                    14+
+                    4+
                   </div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>

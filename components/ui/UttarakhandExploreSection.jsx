@@ -9,11 +9,8 @@ import img4 from "../../public/images/home/3.jpg";
 import img5 from "../../public/images/home/5.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-
-
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules"; // <--- Import Autoplay here
 
 const UttarakhandExploreSection = () => {
   // Data for the highlights of Uttarakhand's natural beauty and attractions.
@@ -45,14 +42,14 @@ const UttarakhandExploreSection = () => {
       icon: PawPrint, // Represents wildlife and safaris.
       title: "Jungle Safari: Wildlife Encounters",
       description:
-        "Embark on an exhilarating jungle safari in nearby national parks to witness diverse wildlife, including elusive tigers, majestic elephants, and exotic birds.",
+        "nearby national parks to witness diverse wildlife, including elusive tigers, majestic elephants, and exotic birds.",
       image: img5, // Placeholder image for Jungle Safari
     },
   ];
 
   return (
     // Section container with responsive padding and a subtle gradient background.
-    <section className="pt-20 md:pt-32 pb-5 bg-gradient-to-br from-indigo-50 to-blue-50 font-inter">
+    <section className=" pt-20 md:pt-32 pb-5 bg-gradient-to-br from-primary-50 to-primary-100 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title and Description */}
         <motion.div
@@ -62,7 +59,7 @@ const UttarakhandExploreSection = () => {
           viewport={{ once: true }} // Animation plays only once when element enters viewport.
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-indigo-200 text-indigo-800 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-green-50 border border-green-400 text-green-600 rounded-full text-sm font-medium mb-4">
             Our Enchanting Location
           </span>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -78,7 +75,12 @@ const UttarakhandExploreSection = () => {
           <Swiper
             spaceBetween={16}
             slidesPerView={1.1}
-            pagination={{ clickable: true }}
+            autoplay={{ 
+              delay: 2000,
+              disableOnInteraction: false, 
+            }}
+           
+            modules={[Autoplay]} 
             style={{ paddingBottom: "2rem" }}
           >
             {highlights.map((item, index) => (
@@ -87,7 +89,7 @@ const UttarakhandExploreSection = () => {
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.15 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   className="bg-white rounded-2xl shadow-md overflow-hidden group transition-all duration-300 transform-gpu"
                 >
                   <div className="relative h-56 w-full overflow-hidden">
@@ -165,7 +167,7 @@ const UttarakhandExploreSection = () => {
                 <p className="text-gray-600 leading-relaxed text-sm mb-4">
                   {item.description}
                 </p>
-                {/* <a 
+                {/* <a
                   href={`/explore/${item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} // Example dynamic link structure.
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200"
                 >
@@ -187,7 +189,7 @@ const UttarakhandExploreSection = () => {
           <p className="text-xl text-gray-700 mb-6">
             Ready to embark on your adventure?
           </p>
-          <a >
+          <a>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

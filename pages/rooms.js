@@ -30,7 +30,7 @@ const Rooms = () => {
         'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?w=800&h=600&fit=crop',
         'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?w=800&h=600&fit=crop'
       ],
-      price: '$299',
+      price: '2999',
       priceNote: 'per night'
     },
     {
@@ -52,7 +52,7 @@ const Rooms = () => {
         'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=800&h=600&fit=crop',
         'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?w=800&h=600&fit=crop'
       ],
-      price: '$459',
+      price: '4999',
       priceNote: 'per night'
     },
     {
@@ -74,7 +74,7 @@ const Rooms = () => {
         'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?w=800&h=600&fit=crop',
         'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?w=800&h=600&fit=crop'
       ],
-      price: '$699',
+      price: '5999',
       priceNote: 'per night'
     }
   ];
@@ -88,7 +88,7 @@ const Rooms = () => {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-sage-100 to-cream-100">
+      <section className="relative pt-20 pb-16 bg-gradient-to-b from-sage-500 to-cream-100">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -131,9 +131,9 @@ const Rooms = () => {
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="mb-4">
                     <span className={`inline-block px-4 py-2 rounded-full text-sm font-medium ${
-                      room.category === 'luxury' ? 'bg-primary-100 text-primary-700' :
-                      room.category === 'premium' ? 'bg-sage-100 text-sage-700' :
-                      'bg-cream-200 text-cream-800'
+                      room.category === 'luxury' ? 'bg-green-100 text-green-700 border border-green-400' :
+                      room.category === 'premium' ? 'bg-primary-100 text-primary-700 border border-primary-400' :
+                      'bg-cream-200 text-cream-800 border border-cream-400'
                     }`}>
                       {room.category.charAt(0).toUpperCase() + room.category.slice(1)} Category
                     </span>
@@ -175,8 +175,8 @@ const Rooms = () => {
                   {/* Pricing & Booking */}
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="text-3xl font-bold text-primary-600 mb-1">
-                        {room.price}
+                      <div className="text-3xl font-bold text-green-600 mb-1">
+                        <span className='text-green-700'>₹</span>{room.price}
                       </div>
                       <div className="text-gray-500 text-sm">
                         {room.priceNote}

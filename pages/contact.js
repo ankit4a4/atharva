@@ -50,13 +50,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Location',
-      details: ['123 Serenity Lane', 'Paradise Valley, State 12345', 'United States'],
+      details: ['123', 'Dehradun', 'Uttarakhand'],
       color: 'text-primary-600'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 123-4568 (Spa)', '+1 (555) 123-4569 (Reservations)'],
+      details: ['+91XX12323473', '+91XX12323473 (Spa)', '+91XX12323473 (Reservations)'],
       color: 'text-sage-600'
     },
     {
@@ -91,7 +91,7 @@ const Contact = () => {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-sage-100 to-cream-100">
+      <section className="relative pt-20 pb-16 bg-gradient-to-b from-sage-500 to-cream-100">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -361,7 +361,7 @@ const Contact = () => {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <Phone size={16} className="text-sage-600" />
-                    <span className="font-medium text-sage-800">+1 (555) 123-HELP</span>
+                    <span className="font-medium text-sage-800">+91XX12323473</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail size={16} className="text-sage-600" />

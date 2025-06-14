@@ -15,7 +15,7 @@ const Spa = () => {
       title: 'Aromatherapy Bliss',
       category: 'Relaxation',
       duration: '90 minutes',
-      price: '$180',
+      price: '₹699',
       description: 'Immerse yourself in pure tranquility with our signature aromatherapy treatment. This therapeutic journey combines the healing power of essential oils with gentle massage techniques to restore balance to your body and mind. Our expert therapists use carefully selected organic oils to create a personalized blend that addresses your specific wellness needs, leaving you feeling refreshed, centered, and completely rejuvenated.',
       benefits: ['Stress Relief', 'Deep Relaxation', 'Improved Sleep', 'Mental Clarity', 'Emotional Balance'],
       image: 'https://images.pexels.com/photos/3757957/pexels-photo-3757957.jpeg?w=600&h=400&fit=crop',
@@ -26,7 +26,7 @@ const Spa = () => {
       title: 'Ayurvedic Healing Ritual',
       category: 'Wellness',
       duration: '120 minutes',
-      price: '$250',
+      price: '₹799',
       description: 'Experience ancient wisdom through our authentic Ayurvedic healing ritual, designed to harmonize your body\'s natural energies. This comprehensive treatment begins with a personalized consultation to determine your unique constitution, followed by specialized techniques including warm oil massage, herbal steam therapy, and chakra balancing. Rooted in 5,000-year-old traditions, this treatment promotes deep healing and lasting wellness transformation.',
       benefits: ['Energy Balancing', 'Detoxification', 'Improved Circulation', 'Spiritual Alignment', 'Holistic Healing'],
       image: 'https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?w=600&h=400&fit=crop',
@@ -37,7 +37,7 @@ const Spa = () => {
       title: 'Deep Tissue Restoration',
       category: 'Therapeutic',
       duration: '75 minutes',
-      price: '$160',
+      price: '$999',
       description: 'Release chronic tension and restore mobility with our intensive deep tissue massage. Our skilled therapists use targeted pressure and specialized techniques to reach deeper layers of muscle and connective tissue, addressing knots, adhesions, and areas of chronic pain. This powerful treatment is perfect for athletes, active individuals, or anyone seeking relief from muscular tension and stress-related discomfort.',
       benefits: ['Muscle Tension Relief', 'Improved Mobility', 'Pain Reduction', 'Better Posture', 'Enhanced Recovery'],
       image: 'https://images.pexels.com/photos/3757958/pexels-photo-3757958.jpeg?w=600&h=400&fit=crop',
@@ -48,7 +48,7 @@ const Spa = () => {
       title: 'Couples Paradise Retreat',
       category: 'Romance',
       duration: '150 minutes',
-      price: '$450',
+      price: '₹1199',
       description: 'Share an intimate wellness journey with your loved one in our exclusive couples suite. This romantic spa experience includes side-by-side massages, private relaxation time in our couples\' sanctuary, and champagne service. The treatment combines Swedish massage techniques with hot stone therapy, creating the perfect atmosphere for connection and relaxation. Complete with rose petals, candlelight, and personalized attention for an unforgettable romantic escape.',
       benefits: ['Romantic Bonding', 'Shared Relaxation', 'Stress Relief for Two', 'Memory Creation', 'Intimate Connection'],
       image: 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?w=600&h=400&fit=crop',
@@ -89,7 +89,7 @@ const Spa = () => {
 
       {/* Hero Section */}
       <section className="relative pt-20 pb-16">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 ">
           <img
             src="https://images.pexels.com/photos/3757957/pexels-photo-3757957.jpeg?w=1920&h=1080&fit=crop"
             alt="Luxury Spa Treatment Room"
