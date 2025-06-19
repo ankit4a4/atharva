@@ -31,6 +31,12 @@ import img3 from "../public/images/home/3.jpg";
 import img4 from "../public/images/home/4.jpg";
 import Image from "next/image";
 import { FlipWords } from "@/components/ui/flip-words";
+import bg1 from "../public/images/home/bg1.jpg";
+import bg2 from "../public/images/home/bg2.jpg";
+import bg3 from "../public/images/home/bg3.jpg";
+import backgroundImage from "../public/images/home/sitebg.png";
+import backgroundImage2 from "../public/images/home/sitebg4.jpg";
+import backgroundImage3 from "../public/images/home/sitebg6.webp";
 
 const Home = () => {
   const [bookingModal, setBookingModal] = useState({
@@ -187,6 +193,19 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+  /// --- Home Page Hero Section Condition --- ///
+
+  const images = [bg1, bg2, bg3];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="no-overflow">
       <Head>
@@ -207,15 +226,21 @@ const Home = () => {
       <section className="hero-section relative overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <motion.img
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 10, ease: "easeOut" }}
-            src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?w=1920&h=1080&fit=crop"
-            alt="Atharva Resort Mountain Sanctuary"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+          {images.map((img, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: currentImage === index ? 1 : 0 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+              style={{
+                backgroundImage: `url(${img.src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="absolute inset-0 w-full h-full"
+            />
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/50 to-transparent" />
         </div>
 
         {/* Floating Particles */}
@@ -284,26 +309,18 @@ const Home = () => {
           </motion.h1>
 
           {/* Subtitle */}
-          {/* Subtitle */}
-          {/* Subtitle */}
-          <motion.div // Changed from motion.p to motion.div - This is the key fix!
+          <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             className="text-lg sm:text-xl md:text-2xl max-w-4xl mb-10 mx-auto leading-relaxed font-light px-4"
           >
-            {/* Use a flex container to arrange elements horizontally */}
             <div className="flex flex-wrap items-baseline justify-center">
-              {/* Use spans for the text segments to keep them inline */}
               <span>Come discover your perfect </span>
               <FlipWords
                 words={["Escape", "Sanctuary", "Adventure"]}
                 duration={1000}
-                // Added `inline-block` to the FlipWords className as an extra measure
-                // to ensure it behaves well within the inline flow, though flex often handles it.
-                className={
-                  "text-primary-400 font-semibold text-4xl inline-block"
-                }
+                className="text-primary-400 font-semibold text-4xl inline-block"
               />
             </div>
             <span> in the heart of nature.</span>
@@ -389,7 +406,14 @@ const Home = () => {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-16 sm:py-20 lg:py-32 bg-white overflow-hidden">
+      <section
+        style={{
+          backgroundImage: `url(${backgroundImage.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="py-16 sm:py-20 lg:py-32 overflow-hidden"
+      >
         <div className="container-width section-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
@@ -412,7 +436,10 @@ const Home = () => {
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-4">
-                  <Award className="text-logoSecondry-50 mx-auto mb-2" size={32} />
+                  <Award
+                    className="text-logoSecondry-50 mx-auto mb-2"
+                    size={32}
+                  />
                   <div className="font-semibold text-gray-800">
                     Award Winning
                   </div>
@@ -471,13 +498,37 @@ const Home = () => {
         </div>
       </section>
       <div className="sticky top-0 ">
-      <UttarakhandExploreSection />
+        <UttarakhandExploreSection />
       </div>
 
-
       {/* Rooms Section */}
-      <section className="py-16 sm:py-20 lg:py-32 bg-sage-50 overflow-hidden">
-        <div className="container-width section-padding">
+      <section
+        style={{
+          backgroundImage: `url(${backgroundImage3.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          position: "relative", // necessary for overlay
+          zIndex: 0,
+        }}
+        className="py-16 sm:py-20 lg:py-32 bg-sage-50 overflow-hidden"
+      >
+        {/* Black Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            height: "100%",
+            width: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        />
+
+        {/* Content Wrapper with position relative to come above overlay */}
+        <div className="container-width section-padding relative z-10">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -488,10 +539,10 @@ const Home = () => {
             <span className="inline-block px-4 py-2 bg-green-50 border border-green-400 text-green-600 rounded-full text-sm font-medium mb-6">
               Luxury Accommodations
             </span>
-            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Exquisite Rooms & Suites
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
               Each accommodation is a masterpiece of design and comfort,
               offering breathtaking views and premium amenities for an
               unforgettable stay.
@@ -516,7 +567,7 @@ const Home = () => {
                   />
                   <div className="absolute top-4 right-4 bg-green-50 border border-green-400 text-green-600 backdrop-blur-sm px-4 py-2 rounded-full">
                     <span className="font-semibold ">
-                     <span className="text-green-700">From</span>  {room.price}
+                      <span className="text-green-700">From</span> {room.price}
                     </span>
                   </div>
                 </div>
@@ -683,8 +734,19 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-b from-logoPrimary-50 via-logoPrimary-50/50 to-transparent overflow-hidden">
-        <div className="container-width section-padding">
+      <section
+        style={{
+          backgroundImage: `url(${backgroundImage2.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+        className="py-16 sm:py-20 lg:py-32 overflow-hidden relative"
+      >
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+        <div className="container-width section-padding relative z-10">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -695,10 +757,10 @@ const Home = () => {
             <span className="inline-block px-4 py-2 bg-logoPrimary-50/10 border border-green-50/30 text-white rounded-full text-sm font-medium mb-6">
               Premium Amenities
             </span>
-            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-100 mb-6">
+            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Exceptional Experiences
             </h2>
-            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
               Every detail is thoughtfully designed to exceed your expectations
               and create lasting memories
             </p>
