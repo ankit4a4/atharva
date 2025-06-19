@@ -1,10 +1,11 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sparkles } from 'lucide-react';
+"use client";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Sparkles } from "lucide-react";
+import logo from "../../public/images/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,16 +16,16 @@ const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Rooms', href: '/rooms' },
-    { name: 'Spa', href: '/spa' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Rooms", href: "/rooms" },
+    { name: "Spa", href: "/spa" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const isActive = (href) => router.pathname === href;
@@ -33,11 +34,11 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className={`fixed top-0 left-0 py-2 md:py-1 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-logoPrimary-50 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <nav className="container-width section-padding">
@@ -45,18 +46,12 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
-              whileHover={{ rotate: 180 }}
+              whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
-              className="text-primary-600"
+              className="text-primary-600 "
             >
-              <Sparkles size={28} className="sm:w-8 sm:h-8" />
+              <Image src={logo} className="w-14 h-14 md:w-20 md:h-20" />
             </motion.div>
-            <div>
-              <h1 className={`text-lg sm:text-2xl font-playfair font-bold ${scrolled?`text-gray-800` : `text-gray-200`}`}>
-                Atharva Resort
-              </h1>
-              <p className="text-xs sm:text-sm text-primary-600 font-medium">& Spa</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -67,10 +62,10 @@ const Header = () => {
                   whileHover={{ y: -2 }}
                   className={`font-medium transition-colors duration-200 relative text-sm lg:text-base ${
                     isActive(item.href)
-                      ? 'text-primary-600'
-                      : scrolled 
-                        ? 'text-gray-700 hover:text-primary-600' 
-                        : 'text-white hover:text-primary-200'
+                      ? "text-primary-600"
+                      : scrolled
+                      ? "text-gray-100 hover:text-logoSecondry-50"
+                      : "text-white hover:text-primary-200"
                   }`}
                 >
                   {item.name}
@@ -84,7 +79,10 @@ const Header = () => {
               </Link>
             ))}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/contact" className="btn-primary text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3">
+              <Link
+                href="/contact"
+                className="bg-logoSecondry-50 text-white text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3"
+              >
                 Book Now
               </Link>
             </motion.div>
@@ -95,7 +93,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? 'text-gray-700' : 'text-white'
+              scrolled ? "text-gray-100" : "text-white"
             }`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -107,7 +105,7 @@ const Header = () => {
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
               className="md:hidden bg-white rounded-lg shadow-xl mt-4 overflow-hidden"
@@ -125,8 +123,8 @@ const Header = () => {
                       onClick={() => setIsOpen(false)}
                       className={`block py-2 font-medium transition-colors ${
                         isActive(item.href)
-                          ? 'text-primary-600'
-                          : 'text-gray-700 hover:text-primary-600'
+                          ? "text-primary-600"
+                          : "text-gray-700 hover:text-primary-600"
                       }`}
                     >
                       {item.name}
@@ -142,7 +140,7 @@ const Header = () => {
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
-                    className="btn-primary w-full text-center block"
+                    className="btn-primary  w-full text-center block"
                   >
                     Book Now
                   </Link>
