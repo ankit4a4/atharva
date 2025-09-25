@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // For declarative animations.
 // Lucide-React icons for thematic representation. Ensure 'lucide-react' is installed.
 import { Mountain, Sprout, Landmark, PawPrint, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import img4 from "../../public/images/home/3.jpg";
+import img4 from "../../public/images/home/homepagenew2.jpeg";
 import img5 from "../../public/images/home/5.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,7 +16,7 @@ const UttarakhandExploreSection = () => {
   // Data for the highlights of Uttarakhand's natural beauty and attractions.
   const highlights = [
     {
-      icon: Mountain, // Represents the resort's mountain setting.
+      icon: Mountain, 
       title: "Nestled in Pristine Nature",
       description:
         "Our resort offers a serene escape, surrounded by lush Himalayan forests and majestic peaks, providing unparalleled tranquility and fresh mountain air.",

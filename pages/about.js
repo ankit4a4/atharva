@@ -3,8 +3,9 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import { Award, Users, Leaf, Heart, Mountain, Star } from "lucide-react";
-import img1 from "../public/images/home/5.jpg"
-import Image from "next/image"
+import img1 from "../public/images/home/5.jpg";
+import Image from "next/image";
+import aboutImage from "@/public/images/home/newslider3.jpeg";
 
 const About = () => {
   const milestones = [
@@ -77,8 +78,7 @@ const About = () => {
     {
       name: "Athrav",
       role: "Founder",
-      image:
-        img1,
+      image: img1,
       bio: "The founder of Atharva Resort & Spa, a real estate visionary with a successful track record of hundreds of properties and extensive land banks, leveraged his global travels and personal experience as a luxury resort guest to create Atharva. He meticulously incorporated every detail of customer comfort and demand.Nestled beside Raja National Park, a protected sanctuary for tigers, elephants, and diverse birdlife, Atharva offers a unique blend of natural serenity and village charm, with its design deeply rooted in the surrounding landscape and local culture.",
     },
   ];
@@ -190,7 +190,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?w=600&h=700&fit=crop"
+                src={aboutImage.src}
                 alt="Resort Meditation Garden"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
@@ -207,7 +207,7 @@ const About = () => {
         </div>
       </section>
 
-            {/* Team Section */}
+      {/* Team Section */}
       <section className="py-20 bg-sage-50">
         <div className="container-width section-padding">
           <motion.div
@@ -367,8 +367,6 @@ const About = () => {
           </div>
         </div>
       </section> */}
-
-
 
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">

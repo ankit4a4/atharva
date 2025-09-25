@@ -25,17 +25,15 @@ import {
 import BookingModal from "../components/ui/BookingModal";
 
 import UttarakhandExploreSection from "../components/ui/UttarakhandExploreSection";
-import img1 from "../public/images/home/1.jpg";
-import img2 from "../public/images/home/2.jpg";
-import img3 from "../public/images/home/3.jpg";
-import img4 from "../public/images/home/4.jpg";
+import img2 from "../public/images/home/about2.jpeg";
+import img3 from "../public/images/home/about1.jpeg";
 import Image from "next/image";
 import { FlipWords } from "@/components/ui/flip-words";
-import bg1 from "../public/images/home/bg1.jpg";
-import bg2 from "../public/images/home/bg2.jpg";
-import bg3 from "../public/images/home/bg3.jpg";
+import bg1 from "../public/images/home/newslider1.jpeg";
+import bg2 from "../public/images/home/newslider2.jpeg";
+import bg3 from "../public/images/home/newslider3.jpeg";
 import backgroundImage from "../public/images/home/sitebg.png";
-import backgroundImage2 from "../public/images/home/sitebg4.jpg";
+import backgroundImage2 from "../public/images/home/about1.jpeg";
 import backgroundImage3 from "../public/images/home/sitebg6.webp";
 
 const Home = () => {
@@ -223,7 +221,7 @@ const Home = () => {
       </Head>
 
       {/* Hero Section */}
-      <section className="hero-section relative overflow-hidden">
+      <section className="hero-section py-20 relative overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
           {images.map((img, index) => (
@@ -234,13 +232,13 @@ const Home = () => {
               transition={{ duration: 1.2, ease: "easeInOut" }}
               style={{
                 backgroundImage: `url(${img.src})`,
-                backgroundSize: "cover",
+                backgroundSize: "100% 100%",
                 backgroundPosition: "center",
               }}
               className="absolute inset-0 w-full h-full"
             />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/70 to-transparent" />
         </div>
 
         {/* Floating Particles */}
@@ -288,7 +286,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-playfair text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6"
+            className="font-playfair text-5xl md:text-7xl  font-bold mb-6"
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -386,23 +384,6 @@ const Home = () => {
             ))}
           </motion.div>
         </div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white"
-        >
-          <motion.div
-            animate={{ y: [0, 15, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center space-y-2"
-          >
-            <span className="text-sm font-medium">Discover More</span>
-            <ChevronDown size={24} />
-          </motion.div>
-        </motion.div>
       </section>
 
       {/* Welcome Section */}
@@ -737,7 +718,8 @@ const Home = () => {
         style={{
           backgroundImage: `url(${backgroundImage2.src})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "right center",
+          backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
         className="py-16 sm:py-20 lg:py-32 overflow-hidden relative"
