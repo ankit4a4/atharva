@@ -17,6 +17,7 @@ const Footer = () => {
   const footerLinks = {
     resort: [
       { name: "About Us", href: "/about" },
+      { name: "Gallery", href: "/gallery" },
       { name: "Rooms & Suites", href: "/" },
       { name: "Spa & Wellness", href: "/" },
       { name: "Dining", href: "#" },
