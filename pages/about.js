@@ -150,12 +150,12 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-                At Atharva Resort & Spa, we are dedicated to providing
-                transformative luxury experiences that nurture the mind, body,
-                and spirit. Nestled in the pristine mountain wilderness, our
-                resort serves as a sanctuary where guests can escape the
-                pressures of modern life and reconnect with themselves and
-                nature.
+                At Atharva Retreat Resort & Spa, we are
+                dedicated to providing transformative luxury experiences that
+                nurture the mind, body, and spirit. Nestled in the pristine
+                mountain wilderness, our resort serves as a sanctuary where
+                guests can escape the pressures of modern life and reconnect
+                with themselves and nature.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8 text-lg">
                 We believe that true luxury lies not just in premium amenities,
@@ -163,9 +163,10 @@ const About = () => {
                 care that make each guest feel valued and cherished. Our
                 commitment extends beyond hospitality to environmental
                 stewardship, ensuring that future generations can also
-                experience the natural beauty that inspired our resort's
+                experience the natural beauty that inspired our resort’s
                 creation.
               </p>
+
               <div className="flex items-center space-x-6">
                 <div className="text-center">
                   <Award className="text-primary-600 mx-auto mb-2" size={32} />
