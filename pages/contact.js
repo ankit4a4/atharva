@@ -85,8 +85,8 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact Us - Atharva Resort & Spa</title>
-        <meta name="description" content="Get in touch with Atharva Resort & Spa. Contact us for reservations, spa bookings, general inquiries, or to plan your perfect mountain retreat experience." />
+        <title>Contact Us - The Atharva Retreat & Spa</title>
+        <meta name="description" content="Get in touch with The Atharva Retreat & Spa. Contact us for reservations, spa bookings, general inquiries, or to plan your perfect mountain retreat experience." />
         <meta name="keywords" content="contact resort, reservations, spa bookings, guest services, mountain resort contact" />
       </Head>
 

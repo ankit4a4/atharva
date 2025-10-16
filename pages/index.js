@@ -208,11 +208,11 @@ const Home = () => {
     <div className="no-overflow">
       <Head>
         <title>
-          Atharva Resort & Spa - Luxury Mountain Retreat & Wellness Sanctuary
+          The Atharva Retreat & Spa - Luxury Mountain Retreat & Wellness Sanctuary
         </title>
         <meta
           name="description"
-          content="Experience ultimate luxury at Atharva Resort & Spa. Premium mountain accommodations, world-class spa treatments, and breathtaking views await you in our serene wellness sanctuary."
+          content="Experience ultimate luxury at The Atharva Retreat & Spa. Premium mountain accommodations, world-class spa treatments, and breathtaking views await you in our serene wellness sanctuary."
         />
         <meta
           name="keywords"
@@ -294,7 +294,7 @@ const Home = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="block"
             >
-              Atharva Resort
+              The Atharva Retreat
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -410,7 +410,7 @@ const Home = () => {
                 Where Luxury Meets Serenity
               </h2>
               <p className="text-lg  text-gray-600 leading-relaxed mb-8">
-                Nestled in the pristine mountains, Atharva Resort & Spa offers
+                Nestled in the pristine mountains, The Atharva Retreat & Spa offers
                 an unparalleled escape where every moment is designed to restore
                 your spirit and rejuvenate your soul. Our commitment to
                 excellence ensures that your stay transcends the ordinary.
