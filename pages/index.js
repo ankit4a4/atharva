@@ -248,7 +248,6 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Floating Elements */}
         <motion.div
           className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl float-animation hidden lg:block"
           initial={{ opacity: 0 }}
@@ -263,7 +262,6 @@ const Home = () => {
         />
 
         <div className="relative z-10 text-center text-white container-width section-padding flex flex-col justify-center min-h-screen">
-          {/* Welcome Badge */}
           <motion.div
             initial={{ y: 100, opacity: 0, scale: 0.8 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -281,7 +279,6 @@ const Home = () => {
             </span>
           </motion.div>
 
-          {/* Main Title */}
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
