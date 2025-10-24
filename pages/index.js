@@ -19,7 +19,6 @@ import {
   MapPin,
   Phone,
   Mail,
-  ChevronDown,
   Sparkles,
 } from "lucide-react";
 import BookingModal from "../components/ui/BookingModal";
@@ -242,7 +241,6 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/70 to-transparent" />
         </div>
 
-        {/* Floating Particles */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(9)].map((_, i) => (
             <div key={i} className="particle" />
@@ -261,7 +259,6 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 3, duration: 2 }}
         />
-
         <div className="relative z-10 text-center text-white container-width section-padding flex flex-col justify-center min-h-screen">
           <motion.div
             initial={{ y: 100, opacity: 0, scale: 0.8 }}
@@ -279,7 +276,6 @@ const Home = () => {
               Welcome to Paradise
             </span>
           </motion.div>
-
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
