@@ -82,7 +82,7 @@ const Header = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/contact"
-                className={`${scrolled ? "bg-[#0a1e03]" : "btn-primary"} bg-logoSecondry-50 text-white text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3`}
+                className={`${scrolled ? "bg-[#0a1e03]" : "btn-primary"}  text-white text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3`}
               >
                 Book Now
               </Link>
