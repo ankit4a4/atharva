@@ -208,7 +208,8 @@ const Home = () => {
     <div className="no-overflow">
       <Head>
         <title>
-          The Atharva Retreat & Spa - Luxury Mountain Retreat & Wellness Sanctuary
+          The Atharva Retreat & Spa - Luxury Mountain Retreat & Wellness
+          Sanctuary
         </title>
         <meta
           name="description"
@@ -289,9 +290,9 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="block"
+              className="block tracking-wider"
             >
-              The Atharva Retreat
+              The Atharva
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -299,7 +300,7 @@ const Home = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary-300 mt-2 sm:mt-4 font-light"
             >
-              & Spa
+              Retreat & Spa
             </motion.span>
           </motion.h1>
 
@@ -315,7 +316,7 @@ const Home = () => {
               <FlipWords
                 words={["Escape", "Sanctuary", "Adventure"]}
                 duration={1000}
-                className="text-primary-400 font-semibold text-4xl inline-block"
+                className="text-primary-400 font-semibold text-4xl inline-block font-playfair"
               />
             </div>
             <span> in the heart of nature.</span>
@@ -407,9 +408,9 @@ const Home = () => {
                 Where Luxury Meets Serenity
               </h2>
               <p className="text-lg  text-gray-600 leading-relaxed mb-8">
-                Nestled in the pristine mountains, The Atharva Retreat & Spa offers
-                an unparalleled escape where every moment is designed to restore
-                your spirit and rejuvenate your soul. Our commitment to
+                Nestled in the pristine mountains, The Atharva Retreat & Spa
+                offers an unparalleled escape where every moment is designed to
+                restore your spirit and rejuvenate your soul. Our commitment to
                 excellence ensures that your stay transcends the ordinary.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">

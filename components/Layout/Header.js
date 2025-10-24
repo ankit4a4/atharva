@@ -38,7 +38,7 @@ const Header = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 py-2 md:py-1 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-logoPrimary-50 backdrop-blur-md shadow-lg"
+          ? "bg-[#e0bb72] backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -63,7 +63,7 @@ const Header = () => {
                   whileHover={{ y: -2 }}
                   className={`font-medium transition-colors duration-200 relative text-sm lg:text-base ${
                     isActive(item.href)
-                      ? "text-primary-600"
+                      ? `${scrolled ? "text-[#0a1e03]" : "text-logoSecondry-50"}`
                       : scrolled
                       ? "text-gray-100 hover:text-logoSecondry-50"
                       : "text-white hover:text-primary-200"
@@ -73,7 +73,7 @@ const Header = () => {
                   {isActive(item.href) && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600"
+                      className={`absolute -bottom-1 left-0 right-0 h-0.5 ${scrolled ? "bg-[#0a1e03]" : "bg-logoSecondry-50"}`}
                     />
                   )}
                 </motion.span>
@@ -82,7 +82,7 @@ const Header = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/contact"
-                className="bg-logoSecondry-50 text-white text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3"
+                className={`${scrolled ? "bg-[#0a1e03]" : "btn-primary"} bg-logoSecondry-50 text-white text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3`}
               >
                 Book Now
               </Link>
@@ -141,7 +141,7 @@ const Header = () => {
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
-                    className="btn-primary  w-full text-center block"
+                    className={`${scrolled ? "btn-primary" : "bg-green-900"} w-full text-center block`}
                   >
                     Book Now
                   </Link>
