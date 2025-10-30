@@ -34,6 +34,7 @@ import bg3 from "../public/images/home/newslider3.jpeg";
 import backgroundImage from "../public/images/home/sitebg.png";
 import backgroundImage2 from "../public/images/home/about1.jpeg";
 import backgroundImage3 from "../public/images/home/sitebg6.webp";
+import LifestyleExperience from "@/components/home/LifestyleExperience";
 
 const Home = () => {
   const [bookingModal, setBookingModal] = useState({
@@ -706,6 +707,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+ 
+     {/* life experience section  */}
+      <LifestyleExperience />
+ 
+
 
       {/* Features Section */}
       <section
