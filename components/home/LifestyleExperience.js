@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 export default function LifestyleExperience() {
   const mediaItems = [
     { type: "video", src: "/videos/1.mp4" },
+    { type: "video", src: "/videos/2.mp4" },
     { type: "video", src: "/videos/3.mp4" },
-    { type: "video", src: "/videos/4.mp4" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -78,7 +78,7 @@ export default function LifestyleExperience() {
                 muted
                 loop
                 playsInline
-                className="w-full h-full object-cover transition-all duration-700"
+                className="w-full h-full object-contain transition-all duration-700"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
