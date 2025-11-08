@@ -61,7 +61,7 @@ export default function LifestyleExperience() {
             </div>
           </motion.div>
 
-          {/* Visual Section */}
+          {/* ===================== Video Section ===================== */}
           <motion.div
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -69,7 +69,7 @@ export default function LifestyleExperience() {
             viewport={{ once: true }}
             className="relative group"
           >
-            {/* Main Display (Video) */}
+            {/* Main Video Display */}
             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
               <motion.video
                 key={mediaItems[activeIndex].src}
@@ -78,25 +78,25 @@ export default function LifestyleExperience() {
                 muted
                 loop
                 playsInline
-                className="w-full h-full object-contain transition-all duration-700"
+                className="w-full h-full object-cover object-center transition-all duration-700"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent pointer-events-none" />
             </div>
 
-            {/* Thumbnails — All visible + scrollable */}
+            {/* Thumbnails — Horizontal Scroll */}
             <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-full max-w-md overflow-x-auto scrollbar-hide">
               <div className="flex justify-center gap-4 px-4 py-3 bg-white/70 rounded-2xl backdrop-blur-sm shadow-lg w-max mx-auto">
                 {mediaItems.map((item, index) => (
                   <div
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className={`w-20 h-16 sm:w-28 sm:h-20 rounded-xl overflow-hidden shadow-md border-2 transition-all duration-300 cursor-pointer ${
+                    className={`w-24 h-16 sm:w-32 sm:h-20 rounded-xl overflow-hidden shadow-md border-2 transition-all duration-300 cursor-pointer ${
                       activeIndex === index
                         ? "border-[#bfa052] scale-105"
-                        : "border-white hover:scale-105"
+                        : "border-transparent hover:scale-105"
                     }`}
                   >
                     <video
