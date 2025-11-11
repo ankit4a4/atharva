@@ -137,7 +137,7 @@ const About = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 bg-white">
+      <section className="py-8 md:py-20 bg-white">
         <div className="container-width section-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -150,12 +150,12 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-                At Atharva Retreat Resort & Spa, we are
-                dedicated to providing transformative luxury experiences that
-                nurture the mind, body, and spirit. Nestled in the pristine
-                mountain wilderness, our resort serves as a sanctuary where
-                guests can escape the pressures of modern life and reconnect
-                with themselves and nature.
+                At Atharva Retreat Resort & Spa, we are dedicated to providing
+                transformative luxury experiences that nurture the mind, body,
+                and spirit. Nestled in the pristine mountain wilderness, our
+                resort serves as a sanctuary where guests can escape the
+                pressures of modern life and reconnect with themselves and
+                nature.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8 text-lg">
                 We believe that true luxury lies not just in premium amenities,
@@ -195,7 +195,7 @@ const About = () => {
                 alt="Resort Meditation Garden"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+              <div className="absolute md:-bottom-6 -bottom-9 left-20 md:-right-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-600 mb-2">
                     4+
@@ -209,7 +209,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-sage-50">
+      <section className="py-8 md:py-20 bg-sage-50">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -236,9 +236,9 @@ const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
-                className="bg-white flex items-center rounded-2xl shadow-lg overflow-hidden card-hover"
+                className="bg-white md:flex items-center rounded-2xl shadow-lg overflow-hidden card-hover"
               >
-                <div className="relative w-[100rem]">
+                <div className="relative md:w-[100rem]">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -263,7 +263,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-sage-50">
+      <section className="py-8 md:py-20 bg-sage-50">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -307,107 +307,151 @@ const About = () => {
         </div>
       </section>
 
-{/* Experience Beauty Section */}
-<section className="py-24 bg-gradient-to-br from-[#fff9f3] via-[#fdf7ef] to-[#fff] overflow-hidden relative">
-  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    
-    {/* Left Side - Content */}
-    <motion.div
-      initial={{ x: -50, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-    >
-      <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-        Experience the Beauty of Atharva
-      </h2>
-      <p className="text-gray-700 text-lg leading-relaxed mb-6">
-        At <span className="text-[#bfa052] font-semibold">The Atharva Retreat & Spa</span>, 
-        every corner is designed to immerse you in a world of tranquility and elegance. 
-        From crystal-blue <span className="font-medium">swimming pools</span> to majestic 
-        <span className="font-medium"> horse-riding trails</span> and nature-blended 
-        <span className="font-medium"> luxury rooms</span>, Atharva brings the art of 
-        refined living to life.
-      </p>
-      <p className="text-gray-700 text-lg leading-relaxed mb-8">
-        Whether you seek peace by the poolside, adventure through serene trails, 
-        or moments of indulgence in your private suite — every experience here 
-        celebrates the harmony between <span className="text-[#bfa052] font-medium">nature and luxury</span>.
-      </p>
+      {/* Experience Beauty Section */}
+      <section className="py-8 md:py-24 bg-gradient-to-br from-[#fff9f3] via-[#fdf7ef] to-[#fff] overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side - Content */}
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Experience the Beauty of Atharva
+            </h2>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              At{" "}
+              <span className="text-[#bfa052] font-semibold">
+                The Atharva Retreat & Spa
+              </span>
+              , every corner is designed to immerse you in a world of
+              tranquility and elegance. From crystal-blue{" "}
+              <span className="font-medium">swimming pools</span> to majestic
+              <span className="font-medium"> horse-riding trails</span> and
+              nature-blended
+              <span className="font-medium"> luxury rooms</span>, Atharva brings
+              the art of refined living to life.
+            </p>
+            <p className="text-gray-700 text-lg leading-relaxed mb-8">
+              Whether you seek peace by the poolside, adventure through serene
+              trails, or moments of indulgence in your private suite — every
+              experience here celebrates the harmony between{" "}
+              <span className="text-[#bfa052] font-medium">
+                nature and luxury
+              </span>
+              .
+            </p>
 
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.97 }}
-        className="bg-[#bfa052] hover:bg-[#a88e45] text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg transition-all duration-300"
-      >
-        Explore the Resort
-      </motion.button>
-    </motion.div>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="bg-[#bfa052] hover:bg-[#a88e45] text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg transition-all duration-300"
+            >
+              Explore the Resort
+            </motion.button>
+          </motion.div>
 
-    {/* Right Side - Image Composition */}
-    <motion.div
-      initial={{ x: 50, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="relative flex justify-center"
-    >
-      {/* Main Large Image */}
-      <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[420px] rounded-3xl overflow-hidden shadow-2xl z-10">
-        <img
-          src="/images/about/pool.jpg"
-          alt="Resort Swimming Pool"
-          className="w-full h-full object-cover"
-        />
-      </div>
+          {/* Right Side - Image Composition */}
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative flex justify-center"
+          >
+            {/* For large screens - layered layout */}
+            <div className="hidden sm:block relative">
+              {/* Main Large Image */}
+              <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[420px] rounded-3xl overflow-hidden shadow-2xl z-10">
+                <img
+                  src="/images/about/pool.jpg"
+                  alt="Resort Swimming Pool"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-      {/* Top Left Image */}
-      <div className="absolute -top-10 -left-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-        <img
-          src="/images/about/horse2.jpg"
-          alt="Garden View"
-          className="w-full h-full object-cover"
-        />
-      </div>
+              {/* Small decorative images */}
+              <div className="absolute -top-10 -left-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl z-20">
+                <img
+                  src="/images/about/horse2.jpg"
+                  alt="Garden View"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -top-12 -right-14 w-[180px] sm:w-[220px] h-[220px] rounded-2xl overflow-hidden shadow-xl z-20">
+                <img
+                  src="/images/about/horse.jpg"
+                  alt="Horse Riding"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-14 -left-10 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl z-20">
+                <img
+                  src="/images/about/room.jpg"
+                  alt="Luxury Room"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-12 -right-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl z-20">
+                <img
+                  src="/images/about/pool2.jpg"
+                  alt="Spa and Wellness"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
 
-      {/* Top Right Image */}
-      <div className="absolute -top-12 -right-14 w-[180px] sm:w-[220px] h-[220px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-        <img
-          src="/images/about/horse.jpg"
-          alt="Horse Riding at Resort"
-          className="w-full h-full object-cover"
-        />
-      </div>
+            {/* For mobile - stacked clean layout */}
+            <div className="flex flex-col items-center gap-4 sm:hidden">
+              <div className="w-72 h-80 rounded-3xl overflow-hidden shadow-lg">
+                <img
+                  src="/images/about/pool.jpg"
+                  alt="Resort Swimming Pool"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                  <img
+                    src="/images/about/horse2.jpg"
+                    alt="Garden View"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                  <img
+                    src="/images/about/horse.jpg"
+                    alt="Horse Riding"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                  <img
+                    src="/images/about/room.jpg"
+                    alt="Luxury Room"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-36 h-36 rounded-2xl overflow-hidden shadow-md">
+                  <img
+                    src="/images/about/pool2.jpg"
+                    alt="Spa and Wellness"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
 
-      {/* Bottom Left Image */}
-      <div className="absolute -bottom-14 -left-10 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-        <img
-          src="/images/about/room.jpg"
-          alt="Luxury Room Interior"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Bottom Right Image */}
-      <div className="absolute -bottom-12 -right-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-        <img
-          src="/images/about/pool2.jpg"
-          alt="Spa and Wellness"
-          className="w-full h-full object-cover"
-        />
-      </div>
-    </motion.div>
-  </div>
-
-  {/* Decorative Glow */}
-  <div className="absolute top-20 left-10 w-48 h-48 bg-[#bfa052]/20 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-  <div className="absolute bottom-10 right-20 w-56 h-56 bg-[#bfa052]/10 rounded-full blur-3xl opacity-30"></div>
-</section>
-
-
+        {/* Decorative Glow */}
+        <div className="absolute top-20 left-10 w-48 h-48 bg-[#bfa052]/20 rounded-full blur-3xl opacity-40 animate-pulse"></div>
+        <div className="absolute bottom-10 right-20 w-56 h-56 bg-[#bfa052]/10 rounded-full blur-3xl opacity-30"></div>
+      </section>
 
       {/* Timeline */}
-      {/* <section className="py-20 bg-white">
+      {/* <section className="py-8 md:py-20 bg-white">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -469,7 +513,7 @@ const About = () => {
       </section> */}
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+      <section className="py-8 md:py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
