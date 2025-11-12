@@ -150,8 +150,8 @@ const Footer = () => {
 
         {/* Social Links & Newsletter */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col  md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-4 px-4">
               <span className="text-gray-300">Follow us:</span>
               {socialLinks.map((social) => (
                 <motion.a
@@ -167,11 +167,11 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4   ">
               <input
                 type="email"
                 placeholder="Subscribe to our newsletter"
-                className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-400"
+                className="md:px-4 px-1 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-400 ml-2"
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
