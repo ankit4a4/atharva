@@ -8,6 +8,8 @@ import Image from "next/image";
 import aboutImage from "@/public/images/home/newslider3.jpeg";
 import bg from "@/public/images/about/stats-bg.jpg";
 
+
+
 const About = () => {
   const milestones = [
     {
@@ -309,103 +311,6 @@ const About = () => {
       </section>
 
       {/* Experience Beauty Section */}
-<<<<<<< HEAD
-      <section className="py-24 bg-gradient-to-br from-[#fff9f3] via-[#fdf7ef] to-[#fff] overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-          {/* Left Side - Content */}
-          <motion.div
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Experience the Beauty of Atharva
-            </h2>
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              At <span className="text-[#bfa052] font-semibold">The Atharva Retreat & Spa</span>,
-              every corner is designed to immerse you in a world of tranquility and elegance.
-              From crystal-blue <span className="font-medium">swimming pools</span> to majestic
-              <span className="font-medium"> horse-riding trails</span> and nature-blended
-              <span className="font-medium"> luxury rooms</span>, Atharva brings the art of
-              refined living to life.
-            </p>
-            <p className="text-gray-700 text-lg leading-relaxed mb-8">
-              Whether you seek peace by the poolside, adventure through serene trails,
-              or moments of indulgence in your private suite — every experience here
-              celebrates the harmony between <span className="text-[#bfa052] font-medium">nature and luxury</span>.
-            </p>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-[#bfa052] hover:bg-[#a88e45] text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg transition-all duration-300"
-            >
-              Explore the Resort
-            </motion.button>
-          </motion.div>
-
-          {/* Right Side - Image Composition */}
-          <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative flex justify-center"
-          >
-            {/* Main Large Image */}
-            <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[420px] rounded-3xl overflow-hidden shadow-2xl z-10">
-              <img
-                src="/images/about/pool.jpg"
-                alt="Resort Swimming Pool"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Top Left Image */}
-            <div className="absolute -top-10 -left-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-              <img
-                src="/images/about/horse2.jpg"
-                alt="Garden View"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Top Right Image */}
-            <div className="absolute -top-12 -right-14 w-[180px] sm:w-[220px] h-[220px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-              <img
-                src="/images/about/horse.jpg"
-                alt="Horse Riding at Resort"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Bottom Left Image */}
-            <div className="absolute -bottom-14 -left-10 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-              <img
-                src="/images/about/room.jpg"
-                alt="Luxury Room Interior"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Bottom Right Image */}
-            <div className="absolute -bottom-12 -right-14 w-[160px] sm:w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-xl hidden sm:block z-20">
-              <img
-                src="/images/about/pool2.jpg"
-                alt="Spa and Wellness"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Decorative Glow */}
-        <div className="absolute top-20 left-10 w-48 h-48 bg-[#bfa052]/20 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-        <div className="absolute bottom-10 right-20 w-56 h-56 bg-[#bfa052]/10 rounded-full blur-3xl opacity-30"></div>
-      </section>
-=======
       <section className="py-8 md:py-24 bg-gradient-to-br from-[#fff9f3] via-[#fdf7ef] to-[#fff] overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Content */}
@@ -499,7 +404,6 @@ const About = () => {
                 />
               </div>
             </div>
->>>>>>> 9106a8f9fa79dd44179a89af4ec4ceeaf1f20d74
 
             {/* For mobile - stacked clean layout */}
             <div className="flex flex-col items-center gap-4 sm:hidden">
@@ -611,19 +515,8 @@ const About = () => {
         </div>
       </section> */}
 
-<<<<<<< HEAD
-{/* Stats Section */}
-<section
-  className="relative py-32 h-[540px] text-white bg-cover bg-top"
-  style={{
-    backgroundImage: `url(${bg.src})`,
-  }}
->
-  {/* Gradient Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-black/80"></div>
-=======
-      {/* Stats Section */}
-      <section className="py-8 md:py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+           {/* Stats Section */}
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
         <div className="container-width section-padding">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -640,25 +533,6 @@ const About = () => {
               satisfaction
             </p>
           </motion.div>
->>>>>>> 9106a8f9fa79dd44179a89af4ec4ceeaf1f20d74
-
-  {/* Content */}
-  <div className="relative z-10 container-width section-padding">
-    <motion.div
-      initial={{ y: 50, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="text-center mb-12"
-    >
-      <h2 className="font-playfair text-4xl font-bold mb-4">
-        By the Numbers
-      </h2>
-      <p className="text-xl opacity-90 max-w-2xl mx-auto">
-        Our achievements reflect our commitment to excellence and guest
-        satisfaction
-      </p>
-    </motion.div>
 
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
       {stats.map((stat, index) => (
@@ -679,7 +553,6 @@ const About = () => {
     </div>
   </div>
 </section>
-
     </>
   );
 };
