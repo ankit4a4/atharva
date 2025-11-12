@@ -515,24 +515,33 @@ const About = () => {
         </div>
       </section> */}
 
-           {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
-        <div className="container-width section-padding">
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="font-playfair text-4xl font-bold mb-4">
-              By the Numbers
-            </h2>
-            <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Our achievements reflect our commitment to excellence and guest
-              satisfaction
-            </p>
-          </motion.div>
+     {/* Stats Section */}
+<section
+  className="relative py-32 h-[540px] text-white bg-cover bg-top"
+  style={{
+    backgroundImage: `url(${bg.src})`,
+  }}
+>
+  {/* Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-black/80"></div>
+
+  {/* Content */}
+  <div className="relative z-10 container-width section-padding">
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center mb-12"
+    >
+      <h2 className="font-playfair text-4xl font-bold mb-4">
+        By the Numbers
+      </h2>
+      <p className="text-xl opacity-90 max-w-2xl mx-auto">
+        Our achievements reflect our commitment to excellence and guest
+        satisfaction
+      </p>
+    </motion.div>
 
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
       {stats.map((stat, index) => (
