@@ -68,7 +68,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: 'Hours',
-      details: ['Reception: 24/7', 'Spa: 8:00 AM - 10:00 PM', 'Dining: 6:00 AM - 11:00 PM'],
+      details: ['Reception: 24/7', 'Spa: 8:00 AM - 6:00 PM', 'Dining: 7:00 AM - 10:00 PM'],
       color: 'text-primary-600'
     }
   ];
@@ -85,8 +85,8 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact Us - The Atharva Retreat & Spa</title>
-        <meta name="description" content="Get in touch with The Atharva Retreat & Spa. Contact us for reservations, spa bookings, general inquiries, or to plan your perfect mountain retreat experience." />
+        <title>Contact Us - The Atharva’s</title>
+        <meta name="description" content="Get in touch with The Atharva’s to make reservations, spa bookings, general inquiries, or to plan your perfect mountain retreat experience." />
         <meta name="keywords" content="contact resort, reservations, spa bookings, guest services, mountain resort contact" />
       </Head>
 

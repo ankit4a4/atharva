@@ -82,8 +82,8 @@ const Spa = () => {
   return (
     <>
       <Head>
-        <title>World-Class Spa Treatments - The Atharva Retreat & Spa</title>
-        <meta name="description" content="Indulge in our luxury spa treatments including aromatherapy, Ayurvedic healing, deep tissue massage, and couples retreats. Experience wellness and rejuvenation in our tranquil mountain sanctuary." />
+        <title>World-Class Spa Treatments - The Atharva’s</title>
+        <meta name="description" content="Indulge in our luxury spa treatments including aromatherapy, Ayurvedic healing, deep tissue massage, and couples retreats at The Atharva’s, where you experience wellness and rejuvenation in our tranquil mountain sanctuary." />
         <meta name="keywords" content="spa treatments, aromatherapy, Ayurvedic healing, deep tissue massage, couples spa, wellness retreat, relaxation" />
       </Head>
 

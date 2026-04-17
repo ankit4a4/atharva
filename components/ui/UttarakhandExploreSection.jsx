@@ -66,7 +66,7 @@ const UttarakhandExploreSection = () => {
             Discover the Heart of Uttarakhand
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Atharva Resort is strategically located amidst the breathtaking
+            The Atharva’s is strategically located amidst the breathtaking
             beauty of Uttarakhand, offering a perfect blend of serene nature and
             exciting adventures.
           </p>

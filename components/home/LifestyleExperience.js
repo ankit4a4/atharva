@@ -36,7 +36,7 @@ export default function LifestyleExperience() {
             <p className="text-gray-700 text-lg leading-relaxed mb-8">
               Discover a serene escape nestled amidst lush greenery and mountain views.{" "}
               <span className="text-[#bfa052] font-semibold">
-                The Atharva Retreat & Spa
+                The Atharva’s
               </span>{" "}
               isn’t just a stay — it’s a lifestyle where modern comfort and natural beauty
               blend seamlessly. Explore elegant flats designed for peace, privacy, and pleasure.

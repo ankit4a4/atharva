@@ -82,8 +82,8 @@ const Rooms = () => {
   return (
     <>
       <Head>
-        <title>Luxury Rooms & Suites - The Atharva Retreat & Spa</title>
-        <meta name="description" content="Discover our collection of luxury rooms and suites at The Atharva Retreat & Spa. From Elite Retreats to Platinum Signature Suites, experience unparalleled comfort and mountain views." />
+        <title>Luxury Rooms & Suites - The Atharva’s</title>
+        <meta name="description" content="Discover our collection of luxury rooms and suites at The Atharva’s, from Elite Retreats to Platinum Signature Suites, and experience unparalleled comfort and mountain views." />
         <meta name="keywords" content="luxury rooms, suites, mountain view, premium accommodation, Elite Retreat, Royal Premium, Platinum Signature" />
       </Head>
 

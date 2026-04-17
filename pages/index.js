@@ -208,12 +208,11 @@ const Home = () => {
     <div className="no-overflow">
       <Head>
         <title>
-          The Atharva Retreat & Spa - Luxury Mountain Retreat & Wellness
-          Sanctuary
+          The Atharva’s - Luxury Mountain Retreat & Wellness Sanctuary
         </title>
         <meta
           name="description"
-          content="Experience ultimate luxury at The Atharva Retreat & Spa. Premium mountain accommodations, world-class spa treatments, and breathtaking views await you in our serene wellness sanctuary."
+          content="Experience ultimate luxury at The Atharva’s, where premium mountain accommodations, world-class spa treatments, and breathtaking views await you in our serene wellness sanctuary."
         />
         <meta
           name="keywords"
@@ -289,7 +288,7 @@ const Home = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="block tracking-wider"
             >
-              The Atharva
+              The Atharva’s
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}

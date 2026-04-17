@@ -61,14 +61,14 @@ const Footer = () => {
               </motion.div>
               <div>
                 <h1 className="text-2xl font-playfair font-bold">
-                  The Atharva Retreat
+                  The Atharva’s
                 </h1>
                 <p className="text-sm text-primary-400 font-medium">& Spa</p>
               </div>
             </Link>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Experience luxury and tranquility at The Atharva Retreat & Spa. Nestled
+              Experience luxury and tranquility at The Atharva’s, nestled
               in nature's embrace, we offer an unparalleled escape from the
               ordinary with world-class amenities and personalized service.
             </p>
@@ -187,7 +187,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © 2024 The Atharva Retreat & Spa. All rights reserved.
+            © 2024 The Atharva’s - All rights reserved.
           </p>
         </div>
       </div>

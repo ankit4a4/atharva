@@ -16,7 +16,7 @@ const About = () => {
       year: "2010",
       title: "Foundation",
       description:
-        "The Atharva Retreat & Spa was established with a vision to create the ultimate luxury mountain retreat.",
+        "The Atharva’s was established with a vision to create the ultimate luxury mountain retreat.",
     },
     {
       year: "2012",
@@ -82,7 +82,7 @@ const About = () => {
       name: "Athrav",
       role: "Founder",
       image: img1,
-      bio: "The founder of The Atharva Retreat & Spa, a real estate visionary with a successful track record of hundreds of properties and extensive land banks, leveraged his global travels and personal experience as a luxury resort guest to create Atharva. He meticulously incorporated every detail of customer comfort and demand.Nestled beside Raja National Park, a protected sanctuary for tigers, elephants, and diverse birdlife, Atharva offers a unique blend of natural serenity and village charm, with its design deeply rooted in the surrounding landscape and local culture.",
+      bio: "The founder of The Atharva’s, a real estate visionary with a successful track record of hundreds of properties and extensive land banks, leveraged his global travels and personal experience as a luxury resort guest to create Atharva. He meticulously incorporated every detail of customer comfort and demand.Nestled beside Raja National Park, a protected sanctuary for tigers, elephants, and diverse birdlife, Atharva offers a unique blend of natural serenity and village charm, with its design deeply rooted in the surrounding landscape and local culture.",
     },
   ];
 
@@ -96,10 +96,10 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About Us - The Atharva Retreat & Spa</title>
+        <title>About Us - The Atharva’s</title>
         <meta
           name="description"
-          content="Discover the story behind The Atharva Retreat & Spa. Learn about our commitment to luxury, sustainability, and creating unforgettable mountain retreat experiences for our guests."
+          content="Discover the story behind The Atharva’s and learn about our commitment to luxury, sustainability, and creating unforgettable mountain retreat experiences for our guests."
         />
         <meta
           name="keywords"
@@ -112,7 +112,7 @@ const About = () => {
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?w=1920&h=1080&fit=crop"
-            alt="Atharva Resort Mountain Vista"
+            alt="The Atharva’s Mountain Vista"
             className="w-full h-full object-cover"
           />
           <div className="gradient-overlay" />
@@ -153,7 +153,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-                At Atharva Retreat Resort & Spa, we are dedicated to providing
+                At The Atharva’s, we are dedicated to providing
                 transformative luxury experiences that nurture the mind, body,
                 and spirit. Nestled in the pristine mountain wilderness, our
                 resort serves as a sanctuary where guests can escape the
@@ -321,12 +321,12 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Experience the Beauty of Atharva
+              Experience the Beauty of The Atharva’s
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
               At{" "}
               <span className="text-[#bfa052] font-semibold">
-                The Atharva Retreat & Spa
+                The Atharva’s
               </span>
               , every corner is designed to immerse you in a world of
               tranquility and elegance. From crystal-blue{" "}
@@ -467,7 +467,7 @@ const About = () => {
               Our Journey
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Milestones that have shaped The Atharva Retreat & Spa into the luxury destination it is today
+              Milestones that have shaped The Atharva’s into the luxury destination it is today
             </p>
           </motion.div>
 
