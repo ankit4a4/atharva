@@ -874,7 +874,7 @@ const Home = () => {
                 <div className="flex items-center space-x-3">
                   <Phone size={20} className="text-primary-200 flex-shrink-0" />
                   <span className="text-sm sm:text-base">
-                    +1 (555) 123-4567
+                    9997662930
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -889,7 +889,7 @@ const Home = () => {
                     className="text-primary-200 flex-shrink-0"
                   />
                   <span className="text-sm sm:text-base">
-                    Paradise Valley, Mountain Region
+                    Bandarjudh, Mauja lalwala majbata, Haridwar
                   </span>
                 </div>
               </div>

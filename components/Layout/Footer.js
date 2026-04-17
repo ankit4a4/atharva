@@ -78,12 +78,12 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-primary-400" />
                 <span className="text-gray-300">
-                  123 Serenity Lane, Paradise Valley, State 12345
+                  Bandarjudh, Mauja lalwala majbata, Haridwar
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-primary-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">9997662930, 9520532323</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary-400" />

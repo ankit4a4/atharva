@@ -50,13 +50,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Location',
-      details: ['123', 'Dehradun', 'Uttarakhand'],
+      details: ['Bandarjudh, Mauja lalwala majbata', 'Haridwar'],
       color: 'text-primary-600'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91XX12323473', '+91XX12323473 (Spa)', '+91XX12323473 (Reservations)'],
+      details: ['9997662930', '9520532323'],
       color: 'text-sage-600'
     },
     {
@@ -310,7 +310,7 @@ const Contact = () => {
                   <div className="text-center">
                     <MapPin className="text-primary-600 mx-auto mb-4" size={48} />
                     <p className="text-gray-700 font-medium">Interactive Map</p>
-                    <p className="text-gray-600 text-sm">Located in Paradise Valley</p>
+                    <p className="text-gray-600 text-sm">Located in Bandarjudh, Mauja lalwala majbata, Haridwar</p>
                   </div>
                 </div>
                 <div className="p-6">
@@ -318,7 +318,7 @@ const Contact = () => {
                     Visit Our Resort
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Nestled in the heart of Paradise Valley, our resort offers easy access 
+                    Nestled in the peaceful surroundings of Haridwar, our resort offers easy access 
                     to hiking trails, scenic drives, and local attractions while providing 
                     a peaceful retreat from city life.
                   </p>
@@ -361,7 +361,7 @@ const Contact = () => {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <Phone size={16} className="text-sage-600" />
-                    <span className="font-medium text-sage-800">+91XX12323473</span>
+                    <span className="font-medium text-sage-800">9997662930, 9520532323</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail size={16} className="text-sage-600" />
